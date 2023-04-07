@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back_icon"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:text="나의 냉장고"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/current_food"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <CheckBox
+                android:id="@+id/checkIngredient1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="양파"
+                android:textSize="20dp"></CheckBox>
+            <CheckBox
+                android:id="@+id/checkIngredient2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="달걀"
+                android:textSize="20dp"></CheckBox>
+            <CheckBox
+                android:id="@+id/checkIngredient3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대파"
+                android:textSize="20dp"></CheckBox>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/IngredientNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXX"
+                    android:textSize="20dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가 먹고 싶군요? 그렇다면?"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="급하다면! 이건 어때요?"
+                android:textSize="20dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/fried_egg"></ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fried_rice"></ImageView>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="급하긴 하지만 먹고는 살아죠..."
+                android:textSize="20dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/egg_salad"></ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tamago_maki"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3355BA"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/home_button"
+            android:src="@drawable/home_icon"></ImageView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/recommend_recipe_button"
+            android:src="@drawable/recipe_icon_pressed"></ImageView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/scheduler_button"
+            android:src="@drawable/scheduler_icon"></ImageView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/favorite_button"
+            android:src="@drawable/favorite_icon"></ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

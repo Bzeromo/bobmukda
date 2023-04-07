@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밥은 먹고 다니냐"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:textSize="35dp"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/refrigerator"
+        android:paddingTop="20dp"></ImageView>
+
+    <EditText
+        android:id="@+id/idEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"></EditText>
+
+    <EditText
+        android:id="@+id/pwEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_gravity="center">
+    </EditText>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/loginBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textColor="#ffffff"></Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="3dp">
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textSize="10dp"></Button>
+        <TextView
+            android:id="@+id/idAndPasswordSearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="아이디/비밀번호 찾기"
+            android:textSize="10dp"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="20dp">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/kakaoLoginImage"
+            android:src="@drawable/kakaotalk_logo_icon_147272"
+            android:layout_weight="1">
+        </ImageView>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/googleLoginImage"
+            android:src="@drawable/google_login_icon"
+            android:layout_weight="1">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/facebookLoginImage"
+            android:src="@drawable/facebook_login_icon"
+            android:layout_weight="1">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

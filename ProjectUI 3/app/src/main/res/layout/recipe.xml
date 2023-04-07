@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/foodNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="제육볶음"
+            android:textSize="40dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:id="@+id/foodImg"
+            android:src="@drawable/jayook"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="- 재료 -"
+            android:textSize="20dp"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/gredient1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/onion"/>
+                <TextView
+                    android:id="@+id/name1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="양파" />
+                <TextView
+                    android:id="@+id/count1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="1/2개"/>
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:id="@+id/gredient"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/chop"/>
+                <TextView
+                    android:id="@+id/name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="돼지고기" />
+                <TextView
+                    android:id="@+id/count"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="200g"/>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="- 양념 -"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15dp"
+            android:text="고추장 1큰술, 간장 1큰술, 설탕 1큰술 "></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="- 방법 -"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15dp"
+            android:text="
+            1. 대파를 반 갈라  5cm 길이로 썰고, \n청양고추는 두껍게 어슷하게 썰어준다.\n
+            2. 마늘은 두껍게 편 썰고, 삼겹살은 한입 크기로 잘라준다.\n
+            3. 팬에 삼겹살을 올리고 맛소금과 후춧가루를 뿌려 \n중약 불로 구워준다.\n
+            4. 삼겹살이 노릇하게 익으면 마늘을 넣고 구워준다.\n
+            5. 굽는 과정에 삼겹살에서 기름이 많이 나왔을 경우 \n적당히 덜어 빼준다.\n
+            6. 마늘이 노릇하게 구워지면 설탕을 넣어 볶아준다.\n
+            7. 간장을 팬 주위에 뿌려 누르듯이 볶아주어 \n불향을 내준다.\n
+            8. 손질한 대파를 넣고, 굵은 고춧가루, 고운 고춧가루를 \n넣어 볶아준다.\n
+            9. 양념이 겉돌지 않게 물을 넣어주어 볶아준다.\n
+            10. 파의 숨이 죽기 전에 후춧가루, 참기름 넣고 섞어준다.\n
+            11. 접시에 담아 깨소금을 뿌려 완성한다.\n"></TextView>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

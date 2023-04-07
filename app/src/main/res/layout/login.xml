@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밥은 먹고 다니냐"
+        android:fontFamily="@font/sdmisaeng"
+        android:textStyle="bold"
+        android:textColor="#FF8B89"
+        android:shadowColor="#FFD4A8"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="5"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:textSize="60dp"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/refrigerator"
+        android:paddingTop="20dp"></ImageView>
+
+    <EditText
+        android:id="@+id/idEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFD4A8"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"></EditText>
+
+    <EditText
+        android:id="@+id/pwEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColorHint="#FFD4A8"
+        android:inputType="textPassword"
+        android:layout_gravity="center">
+    </EditText>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/loginBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:fontFamily="@font/sdmisaeng"
+        android:textSize="30dp"
+        android:text="로그인"
+        android:textColor="#ffffff"></Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="3dp">
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textSize="10dp"></Button>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/idSearchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="아이디 / "
+                android:textSize="10dp"
+                android:onClick="popup_id"></TextView>
+            <TextView
+                android:id="@+id/passwordSearchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="비밀번호 찾기"
+                android:textSize="10dp"
+                android:onClick="popup_pass"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

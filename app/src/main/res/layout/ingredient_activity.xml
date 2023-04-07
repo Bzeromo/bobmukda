@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/btnCheck"
+        android:textSize="30dp"
+        android:layout_margin="10dp">
+    </Button>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/back_image"
+            android:src="@drawable/back_icon"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#FF8B89"
+            android:fontFamily="@font/sdmisaeng"
+            android:text="재료 목록"
+            android:textSize="50dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:fontFamily="@font/sdmisaeng"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="- 가공/유제품 -"
+                android:textColor="#FF8B89"
+                android:textSize="30dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/egg"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/milk" />
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/dumpling" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/canned" />
+                </TableRow>
+
+                <TableRow>
+
+
+                    <CheckBox
+                        android:id="@+id/check1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="계란" />
+
+                    <CheckBox
+                        android:id="@+id/check2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="우유" />
+
+                    <CheckBox
+                        android:id="@+id/check3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="만두" />
+
+                    <CheckBox
+                        android:id="@+id/check4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="참치" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/cheese" />
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/noodle" />
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/kimchi" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <CheckBox
+                        android:id="@+id/check5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="치즈" />
+
+                    <CheckBox
+                        android:id="@+id/check6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="면류" />
+
+                    <CheckBox
+                        android:id="@+id/check7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="김치" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:fontFamily="@font/sdmisaeng"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="- 고기류 -"
+                android:textColor="#FF8B89"
+                android:textSize="30dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/chicken" />
+
+                    <ImageView
+                        android:id="@+id/img9"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/pork" />
+
+                    <ImageView
+                        android:id="@+id/img10"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/beef" />
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/lamb" />
+                </TableRow>
+
+                <TableRow>
+
+
+                    <CheckBox
+                        android:id="@+id/check8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="닭고기" />
+
+                    <CheckBox
+                        android:id="@+id/check9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="돼지고기" />
+
+                    <CheckBox
+                        android:id="@+id/check10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="소고기" />
+
+                    <CheckBox
+                        android:id="@+id/check11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="양고기" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:fontFamily="@font/sdmisaeng"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="- 곡물 -"
+                android:textColor="#FF8B89"
+                android:textSize="30dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img12"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/potato" />
+
+                    <ImageView
+                        android:id="@+id/img13"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/sweetpotato" />
+
+                    <ImageView
+                        android:id="@+id/img14"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/corn" />
+
+                    <ImageView
+                        android:id="@+id/img15"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/flour" />
+                </TableRow>
+
+                <TableRow>
+                    <CheckBox
+                        android:id="@+id/check12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="감자" />
+
+                    <CheckBox
+                        android:id="@+id/check13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="고구마" />
+
+                    <CheckBox
+                        android:id="@+id/check14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="옥수수" />
+
+                    <CheckBox
+                        android:id="@+id/check15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="밀가루" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:fontFamily="@font/sdmisaeng"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="- 채소 -"
+                android:textColor="#FF8B89"
+                android:textSize="30dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img16"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/onion2" />
+
+                    <ImageView
+                        android:id="@+id/img17"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/greenonion" />
+
+                    <ImageView
+                        android:id="@+id/img18"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/carrot" />
+
+                    <ImageView
+                        android:id="@+id/img19"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/pepper" />
+                </TableRow>
+
+                <TableRow>
+
+                    <CheckBox
+                        android:id="@+id/check16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="양파" />
+
+                    <CheckBox
+                        android:id="@+id/check17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="파" />
+
+                    <CheckBox
+                        android:id="@+id/check18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="당근" />
+
+                    <CheckBox
+                        android:id="@+id/check19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="피망" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

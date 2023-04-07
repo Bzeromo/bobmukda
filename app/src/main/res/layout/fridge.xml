@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar_design"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_image"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/back_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="90dp"
+                    android:text="냉장고 현황"
+                    android:fontFamily="@font/sdmisaeng"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:textSize="40dp"></TextView>
+
+
+                <ImageView
+                    android:id="@+id/btnPlus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/plus_icon" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:baselineAligned="true"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="냉장고 초기화"
+                android:layout_gravity="center"
+                android:id="@+id/btnInit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="냉장고 현황"/>
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/egg"
+                        android:visibility="gone"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/milk"
+                        android:visibility="gone"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/dumpling"
+                        android:visibility="gone"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/canned"
+                        android:visibility="gone"
+
+                        />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/check1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="계란"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/check2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="우유"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="만두"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="참치"
+                        android:visibility="gone"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/cheese"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/noodle"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/kimchi"
+                        android:visibility="gone"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/check5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="치즈"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/check6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="면류"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="김치"
+                        android:visibility="gone"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/chicken"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img9"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/pork"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img10"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/beef"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/lamb"
+                        android:visibility="gone"
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/check8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="닭고기"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="돼지고기"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="소고기"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="양고기"
+                        android:visibility="gone"/>
+                </TableRow>
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img12"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/potato"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img13"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/sweetpotato"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img14"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/corn"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img15"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/flour"
+                        android:visibility="gone"
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/check12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="감자"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="고구마"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="옥수수"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="밀가루"
+                        android:visibility="gone"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/img16"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/onion2"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img17"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/greenonion"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img18"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/carrot"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img19"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/pepper"
+                        android:visibility="gone"
+                        />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/check16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="양파"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="파"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="당근"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/check19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="피망"
+                        android:visibility="gone"/>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar_design"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/home_button"
+            android:src="@drawable/home_icon_pressed"></ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/recommend_recipe_button"
+            android:src="@drawable/recipe_icon"></ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/scheduler_button"
+            android:src="@drawable/scheduler_icon"></ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/favorite_button"
+            android:src="@drawable/favorite_icon"></ImageView>
+    </LinearLayout>
+
+
+</RelativeLayout>

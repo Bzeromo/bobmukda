@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "79478731398",
+    "firebase_url": "https://mp-riceeating-default-rtdb.firebaseio.com",
+    "project_id": "mp-riceeating",
+    "storage_bucket": "mp-riceeating.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79478731398:android:0ac1a24d403a3a06e51707",
+        "android_client_info": {
+          "package_name": "com.example.projectui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79478731398-5mlm0k6n3sde87t7csk56m38bm6dt2uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectui",
+            "certificate_hash": "84522755939c65ffe7e8f884f36fcd1320de691a"
+          }
+        },
+        {
+          "client_id": "79478731398-0big268oi53i0gtkj8mj4hk5a9uvu7kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa6T2-mUMlmxpKq6-dGfT_GbTSoy8S5fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79478731398-0big268oi53i0gtkj8mj4hk5a9uvu7kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
